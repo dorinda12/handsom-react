@@ -11,6 +11,8 @@ import LectureImg4 from '../../assets/images/lecture-4.jpg';
 import CourseCard from "../../components/CourseCard/CourseCard";
 import Testimonial from "../../components/Testimonial/Testimonial";
 
+import { Grid } from "../../lib/style/generalStyles";
+
 
 const Home = () =>{
     return (
