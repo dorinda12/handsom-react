@@ -28,7 +28,9 @@ const Section = ({
                 {actionText && <span className="Section-ActionText">{actionText}</span>}
                 {isHeadingVisible && <div className="Section-Heading">
                     {title && <h2 className="Section-Title">{title}</h2>}
-                    {buttonText && <Button modifiers={['heading', 'outline']}>{buttonText}</Button>}
+                    {buttonText && <Button modifiers={['heading', 'outline']} onClick ={handleClick}>
+                    {buttonText}
+                    </Button>}
                 </div>}
                 {children}
             </div>

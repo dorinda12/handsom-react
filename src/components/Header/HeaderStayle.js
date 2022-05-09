@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { NavLink, Link } from 'react-router-dom'
-import { colors,fonts,breakpoints} from "../../lib/stayle/theme";
+import { colors,breakpoints} from "../../lib/style/theme";
 import { ReactComponent as HamburgerIcon} from "../../assets/images/icon-hamburger.svg";
 
 export const Header = styled.header`
@@ -31,7 +31,6 @@ export const HeaderInner = styled.div`
         @media (${breakpoints.desktop}) {
             width: 960px;
             margin: 0 auto;
-            padding: 32px 0;
         }
 
         @media (${breakpoints.desktopLarge}) {

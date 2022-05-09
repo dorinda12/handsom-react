@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import {
     colors,
     breakpoints
-} from '../../lib/stayle/theme';
+} from '../../lib/style/theme';
 
 export const Course = styled(Link)`
     &:hover {
