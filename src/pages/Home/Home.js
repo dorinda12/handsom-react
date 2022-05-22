@@ -28,7 +28,7 @@ const Home = () =>{
                             <CourseCard
                                 key= {course.id}
                                 courseId={course.id} 
-                                imgSrc ={course.Src}
+                                imgSrc ={course.imgSrc}
                                 imgAlt ={course.imgAlt}
                                 title = {course.title}
                                 subtitle = {course.subtitle}

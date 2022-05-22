@@ -2,13 +2,22 @@ import React from 'react';
 import Button from '../Button/Button';
 import './Section.scss';
 
+/* import {
+    Section as SectionWraper,
+    SectionInner,
+    SectionActionText,
+    SectionHeading,
+    SectionTitle,
+}from "./SectionStyles"; */
+
 const Section = ({
     modifiers,
     actionText,
     title,
     buttonText,
     isHeadingVisible = true,
-    children
+    children,
+    handleClick
 }) => {
     const modifierClasses = {
         testimonials: 'Section_testimonials'

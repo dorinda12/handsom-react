@@ -67,7 +67,7 @@ export const Nav = styled.nav`
 `;
 
 export const HeaderNavLink = styled(NavLink)`
-        color: ${colors.secondary};
+        color: ${colors.Secondary};
         letter-spacing: 1px;
         margin-right: 48px;
         position:relative;
@@ -77,7 +77,7 @@ export const HeaderNavLink = styled(NavLink)`
             &::after {
                 opacity: 0;
                 position: absolute;
-                background-color: ${colors.secondary};
+                background-color: ${colors.Secondary};
                 height: 2px;
                 width: 100%;
                 left: 0;

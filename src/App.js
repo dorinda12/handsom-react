@@ -1,16 +1,16 @@
 import './App.scss';
 import { Home, Courses, CourseDetails } from "./imports";
-import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+import ScrollToTop from './ScrollToTop';
 function App() {
   return (
   <>
-    <Router>
+      <ScrollToTop/>
       <Routes>
         <Route path ="/" element={<Home />} />
         <Route path ="/courses" element={<Courses/>}/>
         <Route path ="/course/:id" element={<CourseDetails />} />
       </Routes>
-    </Router>
   </>
   );
 }

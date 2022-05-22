@@ -24,7 +24,7 @@ export const Course = styled(Link)`
 
 export const Figure = styled.figure`
     width: 100%;
-    height: 245%;
+    height: 245px;
     border-radius: 16px;
     overflow: hidden;
     margin-bottom: 16px;

@@ -2,22 +2,23 @@
 import { Header, Section} from "../../imports";
 import {useParams} from "react-router-dom";
 import { useState, useEffect } from "react";
-import coursesMock from "../../lib/courses";
+import coursesMock from "../../lib/mock/courses";
+import SingleCourse from "../../components/SingleCourse/SingleCourse";
 
 //import { arr } from "./courses";
 
-const CourseCard = () => {
+const CourseDetails = () => {
    const { id } = useParams();
-   const {courses, setCourses} = useState(null);
-   const {course, setCourse} = useState(null);
+   const [courses, setCourses] = useState(null);
+   const [course, setCourse] = useState(null);
+
+    useEffect(() => {
+       setCourses(coursesMock);
+   }, []);
 
    useEffect(() => {
-       setCourse(coursesMock)
-   }, [])
-
-   useEffect(() => {
-        courses && setCourse(...courses.filter(course => course.id === parseInt(id)))
-    }, [courses, id])   
+        courses && setCourse(...courses.filter((course) => course.id === parseInt(id)));
+    }, [courses, id]);  
 
 //    const filterdList = arr.filter((item) => item.id == id);
 
@@ -36,8 +37,9 @@ const CourseCard = () => {
                     callback = {handleButtonClick}
                 >
 
-                <SingleCourseCard imgSrc ={course.imgSrc} imgAlt={course.imgAlt} text = {course.text}/> 
-                </Section>}
+                <SingleCourse imgSrc={course.imgSrc} imgAlt={course.imgAlt} text={course.text}/> 
+                </Section>
+                }
             
 
           {/*  {folteredList.map((item) => {
