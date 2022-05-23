@@ -1,18 +1,18 @@
 import React from 'react';
-//import './Testimonial.scss';
-import {
+import './Testimonial.scss';
+/* import {
     Testimonial as WraperTestimonial,
     TestimonialFigure,
     TestimonialImage1,
     TestimonialContet,
     TestimonialText,
     TestimonialQuotation
-} from './TestimonialStyle';
+} from './TestimonialStyle'; */
 
 import TestimonialImg from '../../assets/images/testimonial.jpg';
 
 
-/* const Testimonial = () => {
+const Testimonial = () => {
     return (
         <div className="Testimonial">
             <figure className="Testimonial-Figure">
@@ -29,9 +29,9 @@ import TestimonialImg from '../../assets/images/testimonial.jpg';
             </div>
         </div>
     );
-} */
+}
 
- const Testimonial = () => {
+ /* const Testimonial = () => {
     return (
         <WraperTestimonial>
             <TestimonialFigure>
@@ -48,5 +48,5 @@ import TestimonialImg from '../../assets/images/testimonial.jpg';
             </TestimonialContet>
         </WraperTestimonial>
     );
-}; 
+};  */
 export default Testimonial;
