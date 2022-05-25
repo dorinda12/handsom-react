@@ -20,3 +20,4 @@ export const Grid = styled.div`
         grid-template-columns: repeat(4, 1fr);
     }
 `;
+

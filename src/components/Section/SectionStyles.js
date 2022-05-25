@@ -44,7 +44,7 @@ export const SectionHeading = styled.div `
 `;
 
 export const SectionTitle = styled.h2`
-    color: $colorTextPrimary;
+    color: ${colors.TextPrimary};
     font-size: 26px;
     font-weight: 500;
     margin-bottom: 32px;

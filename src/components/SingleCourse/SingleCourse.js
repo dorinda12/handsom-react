@@ -1,14 +1,14 @@
 import React from 'react';
 import { useParams } from "react-router-dom";
-import './SingleCourse.scss';
-/* import {
+//import './SingleCourse.scss';
+import {
     SingleCourse as SingleCourseWraper,
     Figure,
     Image,
     Text,
-}from './SingleCourseStyled'; */
+}from './SingleCourseStyled';
 
-const SingleCourse = ({
+/* const SingleCourse = ({
     imgSrc,
     imgAlt,
     text
@@ -25,9 +25,9 @@ const SingleCourse = ({
         </div>
     );
 }
-export default SingleCourse;
+export default SingleCourse; */
 
-/* const SingleCourse = ({
+const SingleCourse = ({
     imgSrc,
     imgAlt,
     text
@@ -43,5 +43,6 @@ export default SingleCourse;
             <Text>{text}</Text>
         </SingleCourseWraper>
     );
-}*/
+}
+export default SingleCourse;
 

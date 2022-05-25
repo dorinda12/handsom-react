@@ -12,7 +12,7 @@ import {
 import TestimonialImg from '../../assets/images/testimonial.jpg';
 
 
-/* const Testimonial = () => {
+ /* const Testimonial = () => {
     return (
         <div className="Testimonial">
             <figure className="Testimonial-Figure">
@@ -29,13 +29,13 @@ import TestimonialImg from '../../assets/images/testimonial.jpg';
             </div>
         </div>
     );
-} */
+}  */
 
  const Testimonial = () => {
     return (
         <WraperTestimonial>
             <TestimonialFigure>
-                <TestimonialImage1 src={TestimonialImg} alt="Testimonialka"/> 
+                <TestimonialImage1 src={TestimonialImg}/> 
             </TestimonialFigure>
             <TestimonialContet>
                 <TestimonialText>

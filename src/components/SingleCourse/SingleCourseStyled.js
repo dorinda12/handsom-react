@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { colors, breakpoints } from "../../lib/style/theme";
 
-export const SingleCourse = styled.singlecourse`
+export const SingleCourse = styled.div`
     @media (${breakpoints.tablet}) {
     display: flex;
     justify-content: space-between;
