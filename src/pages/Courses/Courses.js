@@ -10,7 +10,6 @@ const Courses = () => {
 
      useEffect(()=>{
         setCourses(coursesMock)
-        console.log(coursesMock)
     },[]) 
 
     return (
