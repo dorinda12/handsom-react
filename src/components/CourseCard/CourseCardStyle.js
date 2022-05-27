@@ -71,5 +71,5 @@ export const Subtitle = styled.p`
     font-size: 16px;
     font-weight: 300;
     color: ${colors.TextSecondary};
-    text-align: centerM
+    text-align: center;
 `;

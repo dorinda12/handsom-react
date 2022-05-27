@@ -47,7 +47,7 @@ export const Button = styled.button`
     ${(props) =>
     props.isSecondary && 
     `
-        background: $(colors.Primary);
+        background: ${colors.Primary};
         color: ${colors.Secondary};
     `}
 
@@ -59,7 +59,7 @@ export const Button = styled.button`
         transition: 0.3s ease-in-out;
 
         &:hover {
-            background-color: $(colors.Primary);
+            background-color: ${colors.Primary};
             color: ${colors.Secondary};
         }
     `}

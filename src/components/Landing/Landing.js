@@ -1,7 +1,7 @@
 //import Button from "../Button/Button";
 import "./Landing.scss";
 import LandingImg from "../../assets/images/landing.jpg";
-import { Button } from "../../lib/style/generalStyles";
+import { Button, } from "../../lib/style/generalStyles";
 import {
   Landing as WraperLanding,
   LandingImage,

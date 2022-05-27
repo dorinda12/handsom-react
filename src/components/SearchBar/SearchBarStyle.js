@@ -10,11 +10,12 @@ export const SearchBar = styled.input`
     padding: 0px;
   }
   @media screen and (${breakpoints.desktop}) {
-    border: 1px solid ${colorTextSecondary};
+    border: 1px solid ${colors.TextSecondary};
     border-radius: 6px;
     line-height: 40px;
     outline: none;
     font-size: 14px;
+    
     &:focus {
       border: 1px solid ${colorTextPrimary};
     }

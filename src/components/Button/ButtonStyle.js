@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+/* import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import {
     colors,
@@ -58,4 +58,4 @@ export const Button = styled.button`
         `
             width: 220px;
             `}
-    `;
+    `; */

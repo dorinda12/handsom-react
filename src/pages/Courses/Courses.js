@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Header, Section, CourseCard} from "../../imports"
+import { Main, Header, Section, CourseCard} from "../../imports"
 import { Grid } from "../../lib/style/generalStyles";
 import coursesMock from "../../lib/mock/courses";
 import { useEffect, useState } from "react";
@@ -13,7 +13,7 @@ const Courses = () => {
     },[]) 
 
     return (
-        <div className="Courses">
+        <Main>
             <Header modifiers={"secondary"} />
             <Section title={"All courses"}>
                 <Grid>
@@ -24,7 +24,7 @@ const Courses = () => {
                     }
                 </Grid>
             </Section>
-        </div>
+        </Main>
     )
 }
 export default Courses;
