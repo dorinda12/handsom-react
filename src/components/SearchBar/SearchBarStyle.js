@@ -17,7 +17,7 @@ export const SearchBar = styled.input`
     font-size: 14px;
     
     &:focus {
-      border: 1px solid ${colorTextPrimary};
+      border: 1px solid ${colors.TextPrimary};
     }
   }
   @media screen and (${breakpoints.desktopLarge}) {

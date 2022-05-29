@@ -12,15 +12,13 @@ const Home = () =>{
         setTimeout (()=>{
             setCourses(coursesMock);
         }, 1000);
-    },      [])
+    },[])
 
     return (
         <>
             <Header />
             <Main>
-                <section>
-                    <Landing/>
-                </section>
+                <Landing/>
                 <Section title={"Open new possibility"} actionText={"Learn something new"} buttonText={"More text"}>
                     {courses && (
                     <Grid>

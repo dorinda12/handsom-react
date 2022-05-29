@@ -77,6 +77,10 @@ export const Button = styled.button`
             `}
     `;
 
+export const Center = styled.div`
+    display:grid;
+    place-items: center;
+`;
 
 
 
