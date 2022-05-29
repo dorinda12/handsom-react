@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { breakpoints, colors, fonts } from '../../lib/style/theme';
-import {Form as FormFormik, Field as FieldFormik, ErrorMessage as ErrorMessageFormik} from "formik";
+import { Form as FormFormik, Field as FieldFormik, ErrorMessage as ErrorMessageFormik} from "formik";
 import { css } from "styled-components";
 
 export const Grid = styled.div`
@@ -103,7 +103,7 @@ const FieldStyle = css`
     font-family: ${fonts.primary};
 
     &:focus {
-        border-color: ${colors.textPrimary};
+        border-color: ${colors.TextPrimary};
     }
 
     @media (${breakpoints.desktop}){
@@ -111,7 +111,7 @@ const FieldStyle = css`
     }
 `;
 
-export const Field = styled (FieldFormik)`
+export const Field = styled(FieldFormik)`
     ${FieldStyle}
 `;
 
@@ -123,7 +123,7 @@ export const Option = styled.option``;
 
 export const ErrorMessage = styled(ErrorMessageFormik)`
     font-size: 14px;
-    color: ${colors.primary};
+    color: ${colors.Primary};
     padding-top: 8px;
 `;
 

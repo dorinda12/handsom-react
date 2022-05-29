@@ -18,7 +18,8 @@ const Section = ({
     buttonText,
     isHeadingVisible = true,
     children,
-    handleClick
+    handleClick,
+    isMainSection = false,
 }) => {
     return (
         <SectionWraper isTestimonial ={isTestimonial}>

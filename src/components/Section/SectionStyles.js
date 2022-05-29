@@ -39,15 +39,25 @@ export const SectionHeading = styled.div `
     }
 `;
 
-export const SectionTitle = styled.h2`
+export const SectionTitleH1 = styled.h1`
+    ${TitleStyle}
+`;
+
+export const SectionTitleH2 = styled.h2`
+    ${TitleStyle}
+`;
+
+const TitleStyle = css`
     color: ${colors.TextPrimary};
     font-size: 26px;
     font-weight: 500;
     margin-bottom: 32px;
+
     @media (${breakpoints.tablet}) {
-        font-size:32px;
-        margin-bottom:0;
+        font-size: 32px;
+        margin-bottom: 0;
     }
+
     @media (${breakpoints.desktop}) {
         font-size: 36px;
     }
