@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { colors } from "../../lib/style/theme";
 
-export const Testimonial = styled.testimonial`
+export const Testimonial = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,6 +31,6 @@ export const TestimonialText = styled.p`
         color: (${colors.TextSecondary});
 `;
 
-export const TestimonialQuotation = styled.spam`
+export const TestimonialQuotation = styled.span`
     font-size: 48px;
 `;

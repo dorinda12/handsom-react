@@ -1,17 +1,18 @@
 import React from 'react';
-import Button from '../Button/Button';
-import './Section.scss';
+//import Button from '../Button/Button';
+import { Button } from '../../lib/style/generalStyles';
+//import './Section.scss';
 
-/* import {
+import {
     Section as SectionWraper,
     SectionInner,
     SectionActionText,
     SectionHeading,
     SectionTitle,
-}from "./SectionStyles"; */
+}from "./SectionStyles";
 
 const Section = ({
-    modifiers,
+    isTestimonial,
     actionText,
     title,
     buttonText,
@@ -19,10 +20,28 @@ const Section = ({
     children,
     handleClick
 }) => {
-    const modifierClasses = {
+    return (
+        <SectionWraper isTestimonial ={isTestimonial}>
+            <SectionInner>
+                {actionText &&<SectionActionText>{actionText}</SectionActionText>}
+                {isHeadingVisible && (
+                    <SectionHeading>
+                        {title && <SectionTitle>{title}</SectionTitle>}
+                        {buttonText && (
+                            <Button isHeadingVisible isOutlined onClick={handleClick}>
+                                {buttonText}
+                            </Button>
+                            )}
+                    </SectionHeading>
+                )}
+                {children}    
+            </SectionInner>
+        </SectionWraper>
+    );
+};
+/*     const modifierClasses = {
         testimonials: 'Section_testimonials'
     }
-
     let sectionClass = 'Section';
     
     if (modifiers){
@@ -30,7 +49,6 @@ const Section = ({
             sectionClass += ' ' + modifierClasses[modifier];
         });
     }
-
     return (
         <section className={sectionClass}>
             <div className="Section-Inner">
@@ -45,6 +63,8 @@ const Section = ({
             </div>
         </section>
     );
-}
+} */
+
+
 
 export default Section;

@@ -1,7 +1,8 @@
-import "./Button.scss";
+import { Children } from "react";
+//import "./Button.scss";
+import { Button as ButtonWraper } from "../../lib/style/generalStyles";
 
-
-const Button = ({modifiers, children })=>{
+/* const Button = ({modifiers, children })=>{
      const modifierClasses = {
           secondary: 'Button_secondary',
           nav: 'Button_nav',
@@ -9,12 +10,13 @@ const Button = ({modifiers, children })=>{
           heading: 'Button_heading',
           outline: 'Button_outline'
      };
-
      let buttonClass = "Button";
-
      modifiers.map(modifier => (buttonClass += " " + modifierClasses[modifier]));
-
      return <button className={buttonClass}>{children}</button>
+};
+ */
+const Button = ({ children, ...otherProps}) => {
+     return <ButtonWraper {...otherProps}>{Children}</ButtonWraper>;
 };
 
 export default Button;

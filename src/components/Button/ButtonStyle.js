@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+/* import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import {
     colors,
@@ -24,3 +24,4 @@ export const Button = styled(Link)`
         filter: drop-shadow(0 3px 3px $colorTextPrimary);
     }
 `; 
+ */

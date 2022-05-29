@@ -4,7 +4,7 @@ import {
     breakpoints
 } from '../../lib/style/theme';
 
-export const Landing = styled.landing`
+export const Landing = styled.div`
     position: relative;
     height: 100vh;
 `;

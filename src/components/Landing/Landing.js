@@ -1,7 +1,8 @@
-import Button from "../Button/Button";
 import "./Landing.scss";
 import LandingImg from "../../assets/images/landing.jpg";
-/* import {
+//import Button from "../Button/Button";
+import { Button } from "../../lib/style/generalStyles";
+import {
   Landing as WraperLanding,
   LandingImage,
   LandingOverlay,
@@ -10,8 +11,8 @@ import LandingImg from "../../assets/images/landing.jpg";
   LandingContent,
   LandingTitle,
   LandingSubtitle
-}from "./LandingStyle"; */
-const Landing = () =>{
+}from "./LandingStyle";
+/* const Landing = () =>{
      return (
         <div className="Landing">
           <img
@@ -34,14 +35,12 @@ const Landing = () =>{
             </div>
           </div>
         </div>
-
      );
-};
-/* const Landing = () =>{
+}; */
+const Landing = () =>{
     return (
       <WraperLanding>
-        <LandingImage>
-        src = {LandingImg}</LandingImage>
+        <LandingImage src = {LandingImg}/>
           <LandingOverlay>
             <LandingOverlayPrimary/>
             <LandingOverlaySecondary/>
@@ -51,10 +50,10 @@ const Landing = () =>{
             <LandingSubtitle>Make a turnaround in your career or upgrade your current skill
             set with knowledge-based lessons from IT practice. </LandingSubtitle>
           </LandingContent>
-          //fali Button
+          <Button>Explore Courses</Button>
 
       </WraperLanding>
     );
-} */
+}
 
 export default Landing;
