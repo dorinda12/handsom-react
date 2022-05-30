@@ -1,20 +1,29 @@
+import React from 'react'
+import ReactDOM from 'react-dom'
 import { Link } from "react-router-dom";
-import { Header, Section, CourseCard} from "../../imports"
-import { Grid } from "../../lib/style/generalStyles";
+import { Main, Header, Section, CourseCard} from "../../imports";
+import { Center, Grid } from "../../lib/style/generalStyles";
 import coursesMock from "../../lib/mock/courses";
 import { useEffect, useState } from "react";
+/* import SearchBar from "../../components/SearchBar/SearchBarStyle";
+import Loader from "react-loader-spinner"; */
 
 
 const Courses = () => {
     const [courses, setCourses] = useState(null);
 
+
      useEffect(()=>{
         setCourses(coursesMock)
-        console.log(coursesMock)
     },[]) 
 
-    return (
-        <div className="Courses">
+/* const [searchTerm, setSearctTerm] = useState("");
+const Provedi = (prop) => {
+    setSearctTerm(prop.target.value);
+}; */
+
+/*      return (
+        <Main>
             <Header modifiers={"secondary"} />
             <Section title={"All courses"}>
                 <Grid>
@@ -25,7 +34,77 @@ const Courses = () => {
                     }
                 </Grid>
             </Section>
-        </div>
+        </Main>
     )
-}
+}  */
+
+/*         return (
+            <Main>
+                <Header modifiers ={"secondary"} />
+                <Section title = {"All courses"}>
+                    <Center>
+                        <SearchBar placeholder ="Search event by title" Provedi={Provedi}/>
+                    </Center>
+                    <Center>
+                        {!courses ? (
+                            <Loader
+                                type="TailSpin"
+                                color="#e4b43c"
+                                height={100}
+                                widht={100}
+                            />
+                        ) : (
+                            <Grid>
+                                {courses
+                                    .filter((course) => {
+                                        if (searchTerm === "") {
+                                            return courses;
+                                        } else if (
+                                            courses.title
+                                                .toLowerCase()
+                                                .includes(searchTerm.toLowerCase())
+                                        ) {
+                                            return courses;
+                                        }
+                                    })
+                                    .map((course) => (
+                                        <CourseCard
+                                            key={course.id}
+                                            imgSrc ={course.imgSrc}
+                                            imgAlt ={course.imgAlt}
+                                            title = {course.title}
+                                            subtitle = {course.subtitle}
+                                            />
+                                    ))}
+                            </Grid>
+                        )}
+                    </Center>
+                </Section>
+            </Main>
+        );
+        }; */
+
+    
+return (
+    <>
+        <Header isSecondary={true} />
+        <Section title={"All courses"}>
+            {courses && (
+                <Grid>
+                    {courses.map((course) => (
+                        <CourseCard
+                            key={course.id}
+                            courseId={course.id}
+                            imgSrc={course.imgSrc}
+                            imgAlt={course.imgAlt}
+                            title={course.title}
+                            subtitle={course.subtitle}
+                            />
+                    ))}
+                </Grid>
+            )}
+        </Section>
+    </>
+    );
+    };
 export default Courses;
