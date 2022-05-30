@@ -1,5 +1,7 @@
+import React from 'react'
+import ReactDOM from 'react-dom'
 import { Link } from "react-router-dom";
-import { Main, Header, Section, CourseCard} from "../../imports"
+import { Main, Header, Section, CourseCard} from "../../imports";
 import { Center, Grid } from "../../lib/style/generalStyles";
 import coursesMock from "../../lib/mock/courses";
 import { useEffect, useState } from "react";
@@ -10,6 +12,7 @@ import Loader from "react-loader-spinner"; */
 const Courses = () => {
     const [courses, setCourses] = useState(null);
 
+
      useEffect(()=>{
         setCourses(coursesMock)
     },[]) 
@@ -19,7 +22,7 @@ const Provedi = (prop) => {
     setSearctTerm(prop.target.value);
 }; */
 
-     return (
+/*      return (
         <Main>
             <Header modifiers={"secondary"} />
             <Section title={"All courses"}>
@@ -33,7 +36,8 @@ const Provedi = (prop) => {
             </Section>
         </Main>
     )
-} 
+}  */
+
 /*         return (
             <Main>
                 <Header modifiers ={"secondary"} />
@@ -79,4 +83,28 @@ const Provedi = (prop) => {
             </Main>
         );
         }; */
+
+    
+return (
+    <>
+        <Header isSecondary={true} />
+        <Section title={"All courses"}>
+            {courses && (
+                <Grid>
+                    {courses.map((course) => (
+                        <CourseCard
+                            key={course.id}
+                            courseId={course.id}
+                            imgSrc={course.imgSrc}
+                            imgAlt={course.imgAlt}
+                            title={course.title}
+                            subtitle={course.subtitle}
+                            />
+                    ))}
+                </Grid>
+            )}
+        </Section>
+    </>
+    );
+    };
 export default Courses;

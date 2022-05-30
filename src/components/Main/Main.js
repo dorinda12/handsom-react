@@ -1,4 +1,6 @@
 //import "./Main.scss";
+import React from 'react'
+import ReactDOM from 'react-dom'
 import { Main as MainWrapper } from "../Main/MainStyle";
 
 

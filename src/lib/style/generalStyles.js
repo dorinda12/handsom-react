@@ -81,7 +81,3 @@ export const Center = styled.div`
     display:grid;
     place-items: center;
 `;
-
-
-
-

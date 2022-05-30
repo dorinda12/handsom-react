@@ -1,4 +1,7 @@
 import './App.scss';
+import React from 'react'
+import ReactDOM from 'react-dom'
+
 import { Home, Courses, CourseDetails } from "./imports";
 import { Routes, Route } from "react-router-dom";
 import ScrollToTop from './ScrollToTop';

@@ -1,3 +1,5 @@
+import React from 'react'
+import ReactDOM from 'react-dom'
 import "./Landing.scss";
 import LandingImg from "../../assets/images/landing.jpg";
 //import Button from "../Button/Button";
