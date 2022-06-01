@@ -4,13 +4,13 @@ export const fonts = {
 }
 
 export const colors = {
-    Primary: "#bf3939",
-    Secondary:"#ffffff",                                                            
-    Black: "#000000",
-    BgPrimary:"#ffffff",
-    BgSecondary:"#F6FAFB",
-    TextPrimary:"#333333",
-    TextSecondary:"#696969"
+    primary: "#bf3939",
+    secondary:"#ffffff",                                                            
+    black: "#000000",
+    bgPrimary:"#ffffff",
+    bgSecondary:"#F6FAFB",
+    textPrimary:"#333333",
+    textSecondary:"#696969"
 }
 
 export const breakpoints = {

@@ -21,7 +21,7 @@ const Home = () =>{
             <Header />
             <Main>
                 <Landing/>
-                <Section title={"Open new possibility"} actionText={"Learn something new"} buttonText={"More text"}>
+                <Section title={"Open new possibility"} actionText={"Learn something new"} buttonText={"More Courses"}>
                     {courses && (
                     <Grid>
                         {courses.map ((course, index)=> index <=3 && (

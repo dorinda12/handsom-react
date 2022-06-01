@@ -30,8 +30,8 @@ export const Button = styled.button`
     height: 48px;
     font-size: 16px;
     width: 220px;
-    background-color: ${colors.Secondary};
-    color: ${colors.Primary};
+    background-color: ${colors.secondary};
+    color: ${colors.primary};
     border-radius: 30px;
     font-weight: 500;
     text-transform: uppercase;
@@ -47,20 +47,20 @@ export const Button = styled.button`
     ${(props) =>
     props.isSecondary && 
     `
-        background: ${colors.Primary};
-        color: ${colors.Secondary};
+        background: ${colors.primary};
+        color: ${colors.secondary};
     `}
 
     ${(props) =>
     props.isOutlined &&
     `
         width: 200px;
-        border: 1px solid ${colors.Primary};
+        border: 1px solid ${colors.primary};
         transition: 0.3s ease-in-out;
 
         &:hover {
-            background-color: ${colors.Primary};
-            color: ${colors.Secondary};
+            background-color: ${colors.primary};
+            color: ${colors.secondary};
         }
     `}
 

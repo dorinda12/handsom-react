@@ -37,7 +37,7 @@ export const Image = styled.img`
 export const Text = styled.h2`
         font-size: 16px;
         line-height: 180%;
-        color: ${colors.TextPrimary};
+        color: ${colors.textPrimary};
 
         @media (${breakpoints.tablet}) {
             padding-left: 48px;

@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import {
     colors,
-    breakpoints
+    breakpoints,
+    fonts
 } from '../../lib/style/theme';
 
 export const Landing = styled.div`
@@ -33,7 +34,7 @@ export const LandingOverlayPrimary = styled.div`
     left: 0;
     width: 27%;
     height: 100%;
-    background-color: ${colors.Primary};
+    background-color: ${colors.primary};
 `;
 
 export const LandingOverlaySecondary = styled.div`
@@ -58,14 +59,14 @@ export const LandingContent = styled.div`
 export const LandingTitle = styled.h1`
     font-size: 56px;
     width: 550px;
-    color: ${colors.BgPrimary};
+    color: ${colors.bgPrimary};
     margin-bottom: 24px;
 `;
 
 export const LandingSubtitle = styled.p`
     font-size: 16px;
     line-height: 180%;
-    color: ${colors.BgPrimary};
+    color: ${colors.bgPrimary};
     width: 440px;
     margin-bottom: 48px;
 `; 

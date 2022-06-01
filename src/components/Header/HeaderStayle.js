@@ -13,7 +13,7 @@ export const Header = styled.header`
     
 
     ${props => props.isSecondary && `
-        background-color: ${colors.TextPrimary};
+        background-color: ${colors.textPrimary};
         position: initial;
     
     `} 
@@ -67,7 +67,7 @@ export const Nav = styled.nav`
 `;
 
 export const HeaderNavLink = styled(NavLink)`
-        color: ${colors.Secondary};
+        color: ${colors.secondary};
         letter-spacing: 1px;
         margin-right: 48px;
         position:relative;
@@ -77,7 +77,7 @@ export const HeaderNavLink = styled(NavLink)`
             &::after {
                 opacity: 0;
                 position: absolute;
-                background-color: ${colors.Secondary};
+                background-color: ${colors.secondary};
                 height: 2px;
                 width: 100%;
                 left: 0;

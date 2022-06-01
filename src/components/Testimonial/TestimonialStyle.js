@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors } from "../../lib/style/theme";
+import { colors, fonts } from "../../lib/style/theme";
 
 export const Testimonial = styled.div`
     display: flex;
@@ -28,9 +28,11 @@ export const TestimonialContet = styled.div`
 export const TestimonialText = styled.p`
         font-size: 30px;
         line-height: 180%;
-        color: (${colors.TextSecondary});
+        color: (${colors.textSecondary});
+        font-family: ${fonts.primary};
 `;
 
 export const TestimonialQuotation = styled.span`
     font-size: 48px;
+    
 `;

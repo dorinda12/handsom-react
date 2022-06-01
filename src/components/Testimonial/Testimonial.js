@@ -40,9 +40,9 @@ import TestimonialImg from '../../assets/images/testimonial.jpg';
             <TestimonialContet>
                 <TestimonialText>
                     <TestimonialQuotation>
-                    At the academy, I learned how to apply technology in practice. 
+                    "At the academy, I learned how to apply technology in practice. 
                     Frontend education was demanding, it required a lot of time. 
-                    Upon completion, I got my first job as a developer.
+                    Upon completion, I got my first job as a developer."
                     </TestimonialQuotation>
                 </TestimonialText>
             </TestimonialContet>

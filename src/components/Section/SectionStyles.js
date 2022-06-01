@@ -11,7 +11,7 @@ export const Section = styled.section `
 ${(props) =>
     props.isTestimonial &&
     `
-        background-color: ${colors.BgSecondary};
+        background-color: ${colors.bgSecondary};
     `}
 `;
 
@@ -27,8 +27,8 @@ export const SectionInner = styled.div`
 `;
 
 export const SectionActionText = styled.span `
-    display: black;
-    color: ${colors.Primary};
+    display: block;
+    color: ${colors.primary};
     font-weight: 500;
     margin-bottom: 24px;
 `;
@@ -44,7 +44,7 @@ export const SectionHeading = styled.div `
 `;
 
 export const SectionTitle = styled.h2`
-    color: ${colors.TextPrimary};
+    color: ${colors.textPrimary};
     font-size: 26px;
     font-weight: 500;
     margin-bottom: 32px;

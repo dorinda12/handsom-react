@@ -17,7 +17,7 @@ export const Course = styled(Link)`
         }
 
         h3 {
-            color: ${colors.Primary}
+            color: ${colors.primary}
         }
     }
 `;
@@ -61,7 +61,7 @@ export const Image = styled.img`
 export const Title = styled.h3`
     font-size: 20px;
     font-weight: 500;
-    color: ${colors.TextPrimary};
+    color: ${colors.textPrimary};
     text-align: center;
     margin-bottom: 8px;
     transition: color 0.3s ease-out;
@@ -70,6 +70,6 @@ export const Title = styled.h3`
 export const Subtitle = styled.p`
     font-size: 16px;
     font-weight: 300;
-    color: ${colors.TextSecondary};
+    color: ${colors.textSecondary};
     text-align: center;
 `;
