@@ -1,6 +1,7 @@
 import React from 'react';
 //import Button from '../Button/Button';
 import { Button } from '../../lib/style/generalStyles';
+
 //import './Section.scss';
 
 import {
@@ -8,7 +9,8 @@ import {
     SectionInner,
     SectionActionText,
     SectionHeading,
-    SectionTitle,
+    SectionTitleH1,
+    SectionTitleH2,
 }from "./SectionStyles";
 
 const Section = ({
@@ -20,14 +22,22 @@ const Section = ({
     children,
     handleClick,
     isMainSection = false,
+    isCentered = false,
 }) => {
     return (
         <SectionWraper isTestimonial ={isTestimonial}>
             <SectionInner>
-                {actionText &&<SectionActionText>{actionText}</SectionActionText>}
+                {actionText && <SectionActionText>{actionText}</SectionActionText>}
                 {isHeadingVisible && (
                     <SectionHeading>
-                        {title && <SectionTitle>{title}</SectionTitle>}
+                        {title &&
+                            (isMainSection ? ( 
+                                <SectionTitleH1 isCentered={isCentered}>{title}</SectionTitleH1>
+                        ) : (  
+                                <SectionTitleH2 isCentered={isCentered}>{title}</SectionTitleH2>
+                        ))}
+
+                        {/* {title && <SectionTitle>{title}</SectionTitle>} */}
                         {buttonText && (
                             <Button isHeadingVisible isOutlined onClick={handleClick}>
                                 {buttonText}

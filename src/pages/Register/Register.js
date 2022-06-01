@@ -1,6 +1,7 @@
-import { Header } from "../../imports";
+import React from 'react';
+import { Header, Section } from "../../imports";
 import {Form, Field, FormRow, Select, Option, ErrorMessage } from "../../lib/style/generalStyles"
-import { Formik } from "formik"
+import { Formik } from "formik";
 import * as Yup from "yup";
 import { createRoutesFromChildren } from "react-router-dom";
 import Button from "../../components/Button/Button";
@@ -22,7 +23,7 @@ const Register = () => {
                 activeFacultyYear: "",
                 isAdmin: false
             }} 
-            validationSchema={Yep.object({
+            validationSchema={Yup.object({
                 firstName: Yup.string().required("First name is required"),
                 lastName: Yup.string().required("Last name is required"),
                 email: Yup.string().email("Invalid email address").required ("Email is required"),

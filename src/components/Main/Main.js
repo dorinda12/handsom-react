@@ -1,4 +1,5 @@
 //import "./Main.scss";
+import React from 'react';
 import { Main as MainWrapper } from "../Main/MainStyle";
 
 const Main = (props) =>{

@@ -60,6 +60,7 @@ export const Button = styled.button`
             color: ${colors.Secondary};
         }
     `}
+
     ${(props) =>
     props.isHeading &&
     `
@@ -71,6 +72,14 @@ export const Button = styled.button`
         `
             width: 220px;
             `}
+
+    ${(props) =>
+        props.isForm &&
+        `
+            display: block;
+            margin: 0 auto;
+            width: 220px;
+        `}
     `;
 
 export const Form = styled(FormFormik)`

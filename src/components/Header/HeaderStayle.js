@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { NavLink, Link } from 'react-router-dom'
 import { colors,breakpoints} from "../../lib/style/theme";
 import { ReactComponent as HamburgerIcon} from "../../assets/images/icon-hamburger.svg";
+import { ReactComponent as CloseIcon } from "../../assets/images/close-icon.svg";
 
 export const Header = styled.header`
     position: absolute;
@@ -12,7 +13,9 @@ export const Header = styled.header`
     padding: 24px;
     
 
-    ${props => props.isSecondary && `
+    ${(props) => 
+    props.isSecondary && 
+    `
         background-color: ${colors.TextPrimary};
         position: initial;
     
@@ -31,10 +34,11 @@ export const HeaderInner = styled.div`
         @media (${breakpoints.desktop}) {
             width: 960px;
             margin: 0 auto;
+            padding: 32px 0;
         }
 
         @media (${breakpoints.desktopLarge}) {
-            width: 1260px;
+            width: 1270px;
         }
 `;
 

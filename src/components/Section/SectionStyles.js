@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { css } from "styled-components";
 import { colors, breakpoints, transitionEase } from "../../lib/style/theme";
 
 export const Section = styled.section `
@@ -24,7 +25,7 @@ export const SectionInner = styled.div`
 `;
 
 export const SectionActionText = styled.span `
-    display: black;
+    display: block;
     color: ${colors.Primary};
     font-weight: 500;
     margin-bottom: 24px;
@@ -32,19 +33,12 @@ export const SectionActionText = styled.span `
 
 export const SectionHeading = styled.div `
     margin-bottom: 64px;
+
     @media (${breakpoints.tablet}) {
         display: flex;
         justify-content: space-between;
         align-items: center; 
     }
-`;
-
-export const SectionTitleH1 = styled.h1`
-    ${TitleStyle}
-`;
-
-export const SectionTitleH2 = styled.h2`
-    ${TitleStyle}
 `;
 
 const TitleStyle = css`
@@ -62,3 +56,16 @@ const TitleStyle = css`
         font-size: 36px;
     }
 `;
+
+export const SectionTitleH1 = styled.h1`
+    ${TitleStyle}
+
+    ${(props) => props.isCentered && `text-align: center; width: 100%` }
+`;
+
+export const SectionTitleH2 = styled.h2`
+    ${TitleStyle}
+
+    ${(props) => props.isCentered && `text-align: center; width: 100%` }
+`;
+

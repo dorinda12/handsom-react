@@ -1,3 +1,4 @@
+import React from 'react';
 import { Children } from "react";
 //import "./Button.scss";
 import { Button as ButtonWraper } from "../../lib/style/generalStyles";
