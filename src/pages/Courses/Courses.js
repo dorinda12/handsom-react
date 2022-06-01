@@ -5,8 +5,8 @@ import { Main, Header, Section, CourseCard} from "../../imports";
 import { Center, Grid } from "../../lib/style/generalStyles";
 import coursesMock from "../../lib/mock/courses";
 import { useEffect, useState } from "react";
-/* import SearchBar from "../../components/SearchBar/SearchBarStyle";
-import Loader from "react-loader-spinner"; */
+/* import SearchBar from "../../components/SearchBar/SearchBar";
+//import * as Loader  from "react-loader-spinner";  */
 
 
 const Courses = () => {
@@ -58,23 +58,24 @@ const Provedi = (prop) => {
                                 {courses
                                     .filter((course) => {
                                         if (searchTerm === "") {
-                                            return courses;
+                                            return course;
                                         } else if (
-                                            courses.title
+                                            course.title
                                                 .toLowerCase()
                                                 .includes(searchTerm.toLowerCase())
                                         ) {
-                                            return courses;
+                                            return course;
                                         }
                                     })
                                     .map((course) => (
                                         <CourseCard
-                                            key={course.id}
-                                            imgSrc ={course.imgSrc}
-                                            imgAlt ={course.imgAlt}
-                                            title = {course.title}
-                                            subtitle = {course.subtitle}
-                                            />
+                                        key={course.id}
+                                        courseId={course.id}
+                                        imgSrc={course.imgSrc}
+                                        imgAlt={course.imgAlt}
+                                        title={course.title}
+                                        subtitle={course.subtitle}
+                                        />
                                     ))}
                             </Grid>
                         )}
@@ -82,7 +83,8 @@ const Provedi = (prop) => {
                 </Section>
             </Main>
         );
-        }; */
+        };
+export default Courses; */
 
     
 return (
