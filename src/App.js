@@ -4,7 +4,7 @@ import { Home, Courses, CourseDetails } from "./imports";
 import { Routes, Route } from "react-router-dom";
 import ScrollToTop from './ScrollToTop';
 import Register from './pages/Register/Register';
-import Login from './pages/Login/Login.Js';
+import Login from './pages/Login/Login';
 function App() {
   return (
   <>
@@ -13,7 +13,7 @@ function App() {
         <Route path ="/" element={<Home />} />
         <Route path ="/courses" element={<Courses/>}/>
         <Route path ="/course/:id" element={<CourseDetails />} />
-        <Route path ="/registe" element={<Register/>} />
+        <Route path ="/register" element={<Register/>} />
         <Route path ="/sign-in" element={<Login/>}/>
       </Routes>
   </>

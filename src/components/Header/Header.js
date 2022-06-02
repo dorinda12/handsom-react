@@ -1,6 +1,7 @@
 import React from "react";
 import LogoImg from "../../assets/images/logo.svg";
-import Button from "../Button/Button";
+/* import Button from "../Button/Button"; */
+import { Button } from '../../lib/style/generalStyles'
 //import { Link, NavLink } from "react-router-dom";
 import {
   Header as HeaderWrapper,

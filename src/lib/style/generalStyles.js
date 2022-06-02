@@ -101,7 +101,7 @@ export const FormRow = styled.div`
 `;
 
 const FieldStyle = css`
-    border: 1px solid ${colors.textSecondary};
+    border: 1px solid ${colors.TextSecondary};
     border-radius: 6px;
     width: 100%;
     line-height: 50px;

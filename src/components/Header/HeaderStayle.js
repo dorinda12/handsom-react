@@ -57,7 +57,7 @@ export const Hamburger = styled(HamburgerIcon)`
         }
 
         path{
-            fill: ${colors.secondary};
+            fill: ${colors.Secondary};
         }
 `;
 

@@ -1,16 +1,19 @@
 import React from 'react';
-import { Header, Section } from "../../imports";
-import {Form, Field, FormRow, Select, Option, ErrorMessage } from "../../lib/style/generalStyles"
+import { Header, Section, Main } from "../../imports";
+import {Form, Field, FormRow, Select, Option, ErrorMessage, Button } from "../../lib/style/generalStyles"
 import { Formik } from "formik";
 import * as Yup from "yup";
 import { createRoutesFromChildren } from "react-router-dom";
-import Button from "../../components/Button/Button";
+//import Button from "../../components/Button/Button";
+
 const Register = () => {
     return (
         <>
-        <Header isSecondary />
-
-        <Section title = {"Register"} isMainSection isCentered>
+        <Header isSecondary ={true} />
+        <Main>
+            <Section title = {"Register"} 
+            isMainSection={true}
+            isCentered={true}>
 
             <Formik initialValues={{
                 firstName: "",
@@ -108,6 +111,7 @@ const Register = () => {
                 )}
             </Formik>
         </Section>
+        </Main>
         </>
     )
 }
