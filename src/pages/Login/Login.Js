@@ -1,4 +1,4 @@
-import { Header } from "../../imports";
+import { Header, Main, Section } from "../../imports";
 import {Form, Field, FormRow, Select, Option, ErrorMessage, Button } from "../../lib/style/generalStyles"
 import { Formik } from "formik"
 import * as Yup from "yup";
@@ -17,7 +17,7 @@ const Login = () => {
                 passwordConfirmed: "",
                 isAdmin: false
             }} 
-            validationSchema={Yep.object({
+            validationSchema={Yup.object({
                 email: Yup.string().email("Invalid email address").required ("Email is required"),
                 password: Yup.string().min(8, "Password must be at least 8 characters long"),
                 passwordConfirmed: Yup.string().test("password-match", "Passwords must match", function(value){
