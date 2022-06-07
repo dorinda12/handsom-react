@@ -5,6 +5,7 @@ import { Routes, Route } from "react-router-dom";
 import ScrollToTop from './ScrollToTop';
 import Register from './pages/Register/Register';
 import Login from './pages/Login/Login';
+import Profile from './pages/Profile/Profile';
 function App() {
   return (
   <>
@@ -15,6 +16,7 @@ function App() {
         <Route path ="/course/:id" element={<CourseDetails />} />
         <Route path ="/register" element={<Register/>} />
         <Route path ="/sign-in" element={<Login/>}/>
+        <Route path ="/profile" element ={<Profile/>}/>
       </Routes>
   </>
   );

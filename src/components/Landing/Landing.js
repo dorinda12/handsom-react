@@ -10,6 +10,7 @@ import {
   LandingOverlayPrimary,
   LandingOverlaySecondary,
   LandingContent,
+  LandingContentInner,
   LandingTitle,
   LandingSubtitle
 }from "./LandingStyle";
@@ -47,11 +48,13 @@ const Landing = () =>{
             <LandingOverlaySecondary/>
           </LandingOverlay>
           <LandingContent>
+            <LandingContentInner>
             <LandingTitle>Learn what matters with</LandingTitle>
             <LandingSubtitle>Make a turnaround in your career or upgrade your current skill
             set with knowledge-based lessons from IT practice. </LandingSubtitle>
+            <Button isOutlined>Explore Courses</Button>
+            </LandingContentInner>
           </LandingContent>
-          <Button>Explore Courses</Button>
 
       </WraperLanding>
     );

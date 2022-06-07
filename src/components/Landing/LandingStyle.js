@@ -33,7 +33,7 @@ export const LandingOverlayPrimary = styled.div`
     left: 0;
     width: 27%;
     height: 100%;
-    background-color: ${colors.Primary};
+    background-color: rgba(191, 57, 57, 0.92)
 `;
 
 export const LandingOverlaySecondary = styled.div`
@@ -53,6 +53,9 @@ export const LandingContent = styled.div`
     display: flex;
     align-items: center;
     z-index: 1;
+`;
+export const LandingContentInner = styled.div`
+
 `;
 
 export const LandingTitle = styled.h1`
